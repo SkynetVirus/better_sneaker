@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>OneTech</title>
+    <title>Better Sneaker</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="OneTech shop project">
+    <meta name="description" content="Dự Án Better Sneaker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/templates/styles/bootstrap4/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/static/templates/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css">
@@ -32,28 +32,28 @@
                     <div class="row">
                         <div class="col d-flex flex-row">
                             <div class="top_bar_contact_item">
-                                <div class="top_bar_icon"><img src="/static/templates/images/phone.png" alt=""></div>+38 068 005 3570
+                                <div class="top_bar_icon"><img src="/static/templates/images/phone.png" alt=""></div>+84 333737494
                             </div>
                             <div class="top_bar_contact_item">
-                                <div class="top_bar_icon"><img src="/static/templates/images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a>
+                                <div class="top_bar_icon"><img src="/static/templates/images/mail.png" alt=""></div><a href="mailto:nt.hieu0798@gmail.com">nt.hieu0798@gmail.com</a>
                             </div>
                             <div class="top_bar_content ml-auto">
                                 <div class="top_bar_menu">
                                     <ul class="standard_dropdown top_bar_dropdown">
                                         <li>
-                                            <a href="#">English<i class="fas fa-chevron-down"></i></a>
+                                            <a href="#">Tiếng Việt<i class="fas fa-chevron-down"></i></a>
                                             <ul>
-                                                <li><a href="#">Italian</a></li>
-                                                <li><a href="#">Spanish</a></li>
-                                                <li><a href="#">Japanese</a></li>
+                                                <li><a href="#">Tiếng Trung</a></li>
+                                                <li><a href="#">Tiếng Hàn Quốc</a></li>
+                                                <li><a href="#">Tiếng Nhật</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">$ US dollar<i class="fas fa-chevron-down"></i></a>
+                                            <a href="#">VNĐ Việt Nam Đồng<i class="fas fa-chevron-down"></i></a>
                                             <ul>
                                                 <li><a href="#">EUR Euro</a></li>
-                                                <li><a href="#">GBP British Pound</a></li>
-                                                <li><a href="#">JPY Japanese Yen</a></li>
+                                                <li><a href="#">GBP Bảng Anh</a></li>
+                                                <li><a href="#">JPY Yên Nhật</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -65,14 +65,14 @@
                                         <a href="#">{{user.get_full_name}}</a>
                                     </div>
                                     <div>
-                                        <a href="{% url 'accounts:logout' %}">Logout</a>
+                                        <a href="{% url 'accounts:logout' %}">Đăng Xuất</a>
                                     </div>
                                     {% else %}
                                     <div>
-                                        <a href="#">Register</a>
+                                        <a href="#">Đăng Ký</a>
                                     </div>
                                     <div>
-                                        <a id="btnLogin" href="#login">Sign in</a>
+                                        <a id="btnLogin" href="#login">Đăng Nhập</a>
                                     </div>
                                     {% endif %}
                                 </div>
@@ -91,7 +91,7 @@
                         <!-- Logo -->
                         <div class="col-lg-2 col-sm-3 col-3 order-1">
                             <div class="logo_container">
-                                <div class="logo"><a href="{% url 'home:index' %}">OneTech</a></div>
+                                <div class="logo"><a href="{% url 'home:index' %}">Better Sneaker</a></div>
                             </div>
                         </div>
 
@@ -101,10 +101,10 @@
                                 <div class="header_search_content">
                                     <div class="header_search_form_container">
                                         <form action="#" class="header_search_form clearfix">
-                                            <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                            <input type="search" required="required" class="header_search_input" placeholder="Tìm kiếm sản phẩm...">
                                             <div class="custom_dropdown">
                                                 <div class="custom_dropdown_list">
-                                                    <span class="custom_dropdown_placeholder clc">All Categories</span>
+                                                    <span class="custom_dropdown_placeholder clc">Tất cả danh mục</span>
                                                     <i class="fas fa-chevron-down"></i>
                                                     <ul class="custom_list clc">
                                                         <li><a class="clc" href="#">All Categories</a></li>
@@ -127,7 +127,7 @@
                                 <div class="wishlist d-flex flex-row align-items-center justify-content-end">
                                     <div class="wishlist_icon"><img src="/static/templates/images/heart.png" alt=""></div>
                                     <div class="wishlist_content">
-                                        <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                                        <div class="wishlist_text"><a href="#">Danh sách ưa thích</a></div>
                                         <div class="wishlist_count">115</div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                             <div class="cart_count"><span>10</span></div>
                                         </div>
                                         <div class="cart_content">
-                                            <div class="cart_text"><a href="{% url 'cart:index' %}">Cart</a></div>
+                                            <div class="cart_text"><a href="{% url 'cart:index' %}">Giỏ hàng</a></div>
                                             <div class="cart_price">$85</div>
                                         </div>
                                     </div>
@@ -165,7 +165,7 @@
                                 <div class="cat_menu_container">
                                     <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
                                         <div class="cat_burger"><span></span><span></span><span></span></div>
-                                        <div class="cat_menu_text">categories</div>
+                                        <div class="cat_menu_text">Danh mục</div>
                                     </div>
 
                                     <ul class="cat_menu">
@@ -179,10 +179,10 @@
 
                                 <div class="main_nav_menu ml-auto">
                                     <ul class="standard_dropdown main_nav_dropdown">
-                                        <li><a href="{% url 'home:index' %}">Home<i class="fas fa-chevron-down"></i></a></li>
-                                        <li><a href="{% url 'product:index' %}">Product<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="{% url 'home:index' %}">Trang chủ<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="{% url 'product:index' %}">Sản Phẩm<i class="fas fa-chevron-down"></i></a></li>
                                         <li><a href="{% url 'blog:index' %}">Blog<i class="fas fa-chevron-down"></i></a></li>
-                                        <li><a href="{% url 'home:contact' %}">Contact<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="{% url 'home:contact' %}">Liên hệ<i class="fas fa-chevron-down"></i></a></li>
                                     </ul>
                                 </div>
 
@@ -215,65 +215,65 @@
 
                                 <div class="page_menu_search">
                                     <form action="#">
-                                        <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
+                                        <input type="search" required="required" class="page_menu_search_input" placeholder="Tìm kiếm sản phẩm...">
                                     </form>
                                 </div>
                                 <ul class="page_menu_nav">
                                     <li class="page_menu_item has-children">
-                                        <a href="#">Language<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Ngôn ngữ<i class="fa fa-angle-down"></i></a>
                                         <ul class="page_menu_selection">
-                                            <li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Tiếng Anh<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Tiếng Trung<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Tiếng Hàn Quốc<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Tiếng Nhật<i class="fa fa-angle-down"></i></a></li>
                                         </ul>
                                     </li>
                                     <li class="page_menu_item has-children">
                                         <a href="#">Currency<i class="fa fa-angle-down"></i></a>
                                         <ul class="page_menu_selection">
-                                            <li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">VNĐ Việt Nam Đồng<i class="fa fa-angle-down"></i></a></li>
                                             <li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">GBP Bảng Anh<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">JPY Yên Nhật<i class="fa fa-angle-down"></i></a></li>
                                         </ul>
                                     </li>
                                     <li class="page_menu_item">
-                                        <a href="#">Home<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Trang chủ<i class="fa fa-angle-down"></i></a>
                                     </li>
                                     <li class="page_menu_item has-children">
-                                        <a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Siêu giảm giá<i class="fa fa-angle-down"></i></a>
                                         <ul class="page_menu_selection">
-                                            <li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Siêu giảm giá<i class="fa fa-angle-down"></i></a></li>
                                             <li class="page_menu_item has-children">
-                                                <a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
+                                                <a href="#">Nổi bật<i class="fa fa-angle-down"></i></a>
                                                 <ul class="page_menu_selection">
-                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Nike<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Converse<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Addidas<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Ananas<i class="fa fa-angle-down"></i></a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Gucci<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Supprem<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Bittis<i class="fa fa-angle-down"></i></a></li>
                                         </ul>
                                     </li>
                                     <li class="page_menu_item has-children">
-                                        <a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Những hãng nổi bật<i class="fa fa-angle-down"></i></a>
                                         <ul class="page_menu_selection">
-                                            <li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Những hãng nổi bật<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Nike<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Addidas<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Converse<i class="fa fa-angle-down"></i></a></li>
                                         </ul>
                                     </li>
                                     <li class="page_menu_item has-children">
-                                        <a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Phong cách mới nổi<i class="fa fa-angle-down"></i></a>
                                         <ul class="page_menu_selection">
-                                            <li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Phong cách mới nổi<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Đế cao<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Đế vừa<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Đế nông<i class="fa fa-angle-down"></i></a></li>
                                         </ul>
                                     </li>
                                     <li class="page_menu_item"><a href="{% url 'blog:index' %}">blog<i
@@ -285,10 +285,10 @@
                                 <div class="menu_contact">
                                     <div class="menu_contact_item">
                                         <div class="menu_contact_icon"><img src="/static/templates/images/phone_white.png" alt=""></div>
-                                        +38 068 005 3570
+                                        +84 333737494
                                     </div>
                                     <div class="menu_contact_item">
-                                        <div class="menu_contact_icon"><img src="/static/templates/images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a>
+                                        <div class="menu_contact_icon"><img src="/static/templates/images/mail_white.png" alt=""></div><a href="mailto:nt.hieu0798@gmail.com">nt.hieu0798@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -311,11 +311,11 @@
                             <div class="logo_container">
                                 <div class="logo"><a href="#">OneTech</a></div>
                             </div>
-                            <div class="footer_title">Got Question? Call Us 24/7</div>
-                            <div class="footer_phone">+38 068 005 3570</div>
+                            <div class="footer_title">Có bất kì câu hỏi nào hay gọi cho chúng tôi phục vụ 24/7</div>
+                            <div class="footer_phone">+84 333737494</div>
                             <div class="footer_contact_text">
-                                <p>17 Princess Road, London</p>
-                                <p>Grester London NW18JR, UK</p>
+                                <p>475A Điện Biên Phủ</p>
+                                <p>Quận Bình Thạnh, VN</p>
                             </div>
                             <div class="footer_social">
                                 <ul>
@@ -331,44 +331,33 @@
 
                     <div class="col-lg-2 offset-lg-2">
                         <div class="footer_column">
-                            <div class="footer_title">Find it Fast</div>
+                            <div class="footer_title">Tìm kiếm nhanh</div>
                             <ul class="footer_list">
-                                <li><a href="#">Computers & Laptops</a></li>
-                                <li><a href="#">Cameras & Photos</a></li>
-                                <li><a href="#">Hardware</a></li>
-                                <li><a href="#">Smartphones & Tablets</a></li>
-                                <li><a href="#">TV & Audio</a></li>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Addidas</a></li>
+                                <li><a href="#">Suppreme</a></li>
+                                <li><a href="#">Elvis</a></li>
+                                <li><a href="#">Bitis</a></li>
                             </ul>
-                            <div class="footer_subtitle">Gadgets</div>
+                            <div class="footer_subtitle">Cao cấp</div>
                             <ul class="footer_list">
-                                <li><a href="#">Car Electronics</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2">
-                        <div class="footer_column">
-                            <ul class="footer_list footer_list_2">
-                                <li><a href="#">Video Games & Consoles</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Cameras & Photos</a></li>
-                                <li><a href="#">Hardware</a></li>
-                                <li><a href="#">Computers & Laptops</a></li>
+                                <li><a href="#">Bitis</a></li>
                             </ul>
                         </div>
                     </div>
 
+                  
+
                     <div class="col-lg-2">
                         <div class="footer_column">
-                            <div class="footer_title">Customer Care</div>
+                            <div class="footer_title">Chăm sóc khách hàng</div>
                             <ul class="footer_list">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Order Tracking</a></li>
-                                <li><a href="#">Wish List</a></li>
-                                <li><a href="#">Customer Services</a></li>
-                                <li><a href="#">Returns / Exchange</a></li>
+                                <li><a href="#">Tài khoản của tôi</a></li>
+                                <li><a href="#">Theo dõi đơn hàng</a></li>
+                                <li><a href="#">Danh sách ưa thích</a></li>
+                                <li><a href="#">Dịch vụ chăm sóc khách hàng</a></li>
                                 <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Product Support</a></li>
+                                <li><a href="#">Hỗ trợ sản phẩm</a></li>
                             </ul>
                         </div>
                     </div>
@@ -390,7 +379,7 @@
                                 Copyright &copy;
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                </script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://facebook.com/nt.hieu0798" target="_blank">QCM</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </div>
                             <div class="logos ml-sm-auto">
