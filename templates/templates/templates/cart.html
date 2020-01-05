@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
                 <div class="cart_container">
-                    <div class="cart_title">Shopping Cart</div>
+                    <div class="cart_title">Giỏ hàng</div>
 					{% if instance.items.count > 0 %}
 						<div class="cart_items">
 							<ul class="cart_list">
@@ -43,7 +43,7 @@
 											<div class="cart_item_total cart_info_col">
 												<div class="cart_item_title"></div>
 												<div class="cart_item_text">
-													<button data="{{item.id}}" class="btn btn-info btn-sm btn-delete-item">del</button>
+													<button data="{{item.id}}" class="btn btn-info btn-sm btn-delete-item">Xóa</button>
 												</div>
 											</div>
 										</div>
@@ -55,20 +55,20 @@
 						<!-- Order Total -->
 						<div class="order_total">
 							<div class="order_total_content text-md-right">
-								<div class="order_total_title">Order Total:</div>
+								<div class="order_total_title">Tổng:</div>
 								<div class="order_total_amount">${{instance.cart_price}}</div>
 							</div>
 						</div>
 
 						<div class="cart_buttons">
-							<button type="button" class="button cart_button_clear">Back to home</button>
-							<button type="button" class="button cart_button_checkout">Cart checkout</button>
+							<button type="button" class="button cart_button_clear">Về trang chủ</button>
+							<button type="button" class="button cart_button_checkout">Tiến hành thanh toán</button>
 						</div>
 					{% else %}
 						<div class="cart_empty">
 							<div class="d-flex flex-column justify-content-center">
 								<img src="/static/templates/images/cart%20empty.png" class="img-fluid" alt="Responsive image"/>
-								<a href="{% url 'home:index' %}" class="btn btn-outline-primary align-self-center">Continue Shopping</a>
+								<a href="{% url 'home:index' %}" class="btn btn-outline-primary align-self-center"></a>
 							</div>
 						</div>
 					{% endif %}
