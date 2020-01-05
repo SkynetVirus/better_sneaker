@@ -12,7 +12,7 @@
     </div>
     <div class="home_overlay"></div>
     <div class="home_content d-flex flex-column align-items-center justify-content-center">
-        <h2 class="home_title">Technological Blog</h2>
+        <h2 class="home_title">Bài viết</h2>
     </div>
 </div>
 
@@ -29,7 +29,7 @@
 							<div class="blog_image" style="background-image:url({{item.image.url}})"></div>
 							<div class="blog_text">{{item.title}}
 							</div>
-							<div class="blog_button"><a href="{% url 'blog:detail' slug=item.slug %}">Continue Reading</a></div>
+							<div class="blog_button"><a href="{% url 'blog:detail' slug=item.slug %}">Đọc thêm</a></div>
 						</div>
 					{% endfor %}
                 </div>
