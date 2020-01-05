@@ -1,0 +1,41 @@
+{% extends "templates/base.html" %} {% block body %}
+<div class="card" style="width: 20rem; margin-left: auto; margin-right: auto;">
+    <div class="card-body">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button> {{ message }}
+        </div>
+        {% endfor %}
+        <div class="container">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <a href="{% url 'accounts:register' %}" class="signup-image-link">Tạo một tài khoản</a>
+                </div>
+                <div class="signin-form">
+                    <h3 class="form-title">Login</h3>
+                    <form method="POST" class="register-form" id="login-form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="your_name"></label>
+                            <input class="form-control" type="text" name="username" id="username" placeholder="Tên của bạn" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Mật khẩu" required />
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember-me">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input type="submit" name="signin" id="signin" class="btn btn-primary" value="Đăng nhập" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

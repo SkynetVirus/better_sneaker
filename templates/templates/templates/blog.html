@@ -1,0 +1,45 @@
+{% extends "templates/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" type="text/css" href="/static/templates/styles/blog_styles.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/styles/blog_responsive.css">
+{% endblock header %}
+
+{% block body %}
+<!-- Home -->
+<div class="home">
+    <div class="home_background parallax-window" data-parallax="scroll" data-image-src="/static/templates/images/shop_background.jpg">
+    </div>
+    <div class="home_overlay"></div>
+    <div class="home_content d-flex flex-column align-items-center justify-content-center">
+        <h2 class="home_title">Technological Blog</h2>
+    </div>
+</div>
+
+<!-- Blog -->
+
+<div class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="blog_posts d-flex flex-row align-items-start justify-content-between">
+					{% for item in blogs %}
+						 <!-- Blog post -->
+						<div class="blog_post">
+							<div class="blog_image" style="background-image:url({{item.image.url}})"></div>
+							<div class="blog_text">{{item.title}}
+							</div>
+							<div class="blog_button"><a href="{% url 'blog:detail' slug=item.slug %}">Continue Reading</a></div>
+						</div>
+					{% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
+{% block footer %}
+<script src="/static/templates/js/blog_custom.js"></script>
+{% endblock footer %}
